@@ -1,3 +1,4 @@
+import heapq
 def gbfs(graph, start, goal):
     pq = [(graph.heuristic(start, goal), start, [start])]
     visited = set()
