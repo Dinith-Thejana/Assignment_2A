@@ -1,5 +1,3 @@
-import heapq
-
 def gbfs(graph, start, goal):
     pq = [(graph.heuristic(start, goal), start, [start])]
     visited = set()
@@ -18,5 +16,3 @@ def gbfs(graph, start, goal):
                 heapq.heappush(pq, (graph.heuristic(neighbor, goal), neighbor, path + [neighbor]))
 
     return None
-
-#kahbv;kjaenvj
